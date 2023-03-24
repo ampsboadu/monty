@@ -62,6 +62,8 @@ typedef struct instruction_s
 } instruction_t;
 
 extern global_t vglo;
+void free_vglo(void);
+void start_vglo(FILE *fd);
 
 /* opcode_instructuions*/
 void _push(stack_t **stack, unsigned int line_number);
